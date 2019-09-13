@@ -1,0 +1,98 @@
+.about-grid-one-two{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 60vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+.about-us-image{
+    background-image: url('https://cdn.shopify.com/s/files/1/0018/1587/1546/products/custom-design-corrugated-mailer-boxes_1024x1024.png?v=1543205964');
+    background-size: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.about-us-text{
+    padding: 48px;
+    font-family: sans-serif
+}
+.about-us-text > h1{
+    margin: 0;
+    font-size: 40px;
+}
+.about-us-text > p{
+    margin: 0;
+    font-size: 20px;
+    padding: 16px;
+}
+.about-cover-title{
+    width: 100%;
+    height: 50vh;
+    background-image: url('https://cdn.wallpapersafari.com/60/40/80JRy5.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke
+}
+.get-started-button{
+    border: none;
+    background-color: #F2D0C9;
+    font-size: 20px;
+    margin-left: 80%;
+    padding: 8px;
+}
+.about-cover-title-text{
+    background-color: rgba(173, 63, 81, 0.7);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.about-grid-two-one{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 60vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+.about-image{
+    background-image: url('../Assets/Daddy-pic.jpg');
+    background-size: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media(max-width: 764px){
+    .about-grid-one-two{
+        width: 100%;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+    .about-us-image{
+        height: 30vh;
+    }
+    .about-us-text{
+        padding: 0;
+
+    }
+    .about-grid-two-one{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+    }
+    .get-started-button{
+        font-size: 15px;
+    }
+    .about-image {
+        background-size: 225px;
+    }
+}

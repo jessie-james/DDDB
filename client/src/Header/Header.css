@@ -1,0 +1,53 @@
+body{
+    margin: 0
+}
+@font-face{
+    src: url('../Assets/Roboto-Bold.ttf');
+    font-family: Roboto;
+}
+
+.hero-image{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    background-image: url('https://imgix.bustle.com/uploads/image/2018/3/2/14a56269-9c45-4b7c-89ef-7bba018693f0-fotolia_110356619_subscription_monthly_m.jpg?w=960&h=540&fit=crop&crop=faces&auto=format&q=70');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.hero-title{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    /* background: white; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    color: white;
+}
+.header-link {
+    text-decoration: none;
+    margin: 0;
+    font-size: 50px;
+    color: #F2CC87;  
+}
+.hero-title>h3{
+    font-size: 15px;
+}
+.hero-title > img{
+    height: 100px;
+}
+
+@media only screen and (min-width: 600px) {
+    .header-link {
+        font-size: 90px;
+    }
+     .hero-title>h3{
+        font-size: 20px;
+     }
+}

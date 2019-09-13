@@ -1,0 +1,104 @@
+.ThemeBoxesContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.box-container {
+    margin: 10px;
+    height: 250px;
+    color: #8C4A44;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 90%;
+    border: 3px solid rgba(140, 74, 68, 0.331);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #F2D0C9;
+}
+
+.box-container>h2 {
+    font-size: 30pt;
+}
+
+.save-theme-button {
+    height: 15%;
+    font-size: 15pt;
+    border-radius: 10px;
+    border: #5C725E;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.543);
+    background-color: #5C725E;
+    align-self: flex-start;
+    margin: 10px;
+    color: rgb(23, 31, 24);
+}
+
+.save-theme-button:active {
+    background-color: rgb(43, 55, 44);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.363);
+}
+
+.delete-them-button {
+    font-size: 15pt;
+    color: #8C4A44;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.363);
+    border-radius: 5px;
+    align-self: flex-end;
+    margin: 10px;
+    height: 40%;
+    width: 15%;
+}
+
+.delete-them-button:active {
+    background: rgba(0, 0, 0, 0.166);
+    color: rgb(89, 46, 42);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
+}
+
+.switch-to-subscription {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.next-button {
+    display:flex;
+    height: 5vh;
+    width: 10vh;
+    border-radius: 30px;
+    box-shadow: 5px 5px 8px rgba(43, 67, 45, 0.865);
+    border: none;
+    background-color: rgb(81, 118, 84);
+    font-size: 20pt;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color:rgba(43, 67, 45, 0.865);
+}
+
+
+.theme-box-images {
+    height: 150px;
+}
+@media only screen and (min-width: 825px) {
+     .ThemeBoxesContainer{
+        flex-direction: row;
+     width: 100%;
+     height: 60vh;
+     }
+
+     .box-container {
+          width: 5
+          0%;
+     }
+
+
+
+}
