@@ -6,6 +6,7 @@ const path = require("path")
 
 app.use('/', express.json())
 app.use('/box', require('./routes/boxRoutes'))
+app.use('/signin',require('./routes/userRouts'))
 app.use(express.static(path.join(__dirname, "client", "build")))
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/dddb-app', { useNewUrlParser: true })
